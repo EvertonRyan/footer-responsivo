@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: #0F0F0F;
+    color: #707070;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacts header span {
+    color: white;
+    display: block;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.social-media a {
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.social-media a:hover {
+    opacity: .8;
+}
+
+.social-media i {
+    font-size: 1.25rem;
+}
+
+#insta {
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+#face {
+    background-color: #3b5998;
+}
+
+#whats {
+    background-color: #00E676;
+}
+
+.products ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.products ul .title {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.products a {
+    text-transform: capitalize;
+    color: #707070;
+}
+
+.products a:hover {
+    color: #833ab4;
+}
+
+.blog-area ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.blog-area ul .title {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.blog-area a {
+    text-transform: capitalize;
+    color: #707070;
+}
+
+.blog-area a:hover {
+    color: #833ab4;
+}
+
+.subscribe-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.subscribe-area span {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.form-input {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-input input {
+    all: unset;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-input button {
+    width: 50px;
+    background-color: #833ab4;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.form-input button:hover {
+    opacity: .8;
+}
+
+.footer {
+    background-color: black;
+    color: #707070;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
